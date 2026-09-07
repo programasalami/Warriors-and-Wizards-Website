@@ -45,20 +45,6 @@ body {
   to { background-position: 0 -400px; }
 }
 
-.site-header {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: 2;
-}
-.logo-badge {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: block;
-  box-shadow: 0 0 0 3px var(--border), 0 0 16px rgba(178, 108, 255, 0.4);
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -67,7 +53,7 @@ body {
   gap: 48px;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 90px 24px 20px;
+  padding: 60px 24px 20px;
 }
 .hero-text {
   flex: 1 1 340px;
@@ -204,7 +190,7 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 40px;
     gap: 28px;
   }
   .hero-text { text-align: center; }
