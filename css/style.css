@@ -296,6 +296,7 @@ body {
 .steps { margin: 0; padding-left: 22px; }
 .steps li { margin-bottom: 6px; }
 .fine { font-size: 17px; color: var(--text-dim); }
+code { font-family: var(--font-body); background: var(--bg); border: 1px solid var(--border); padding: 0 6px; }
 
 @media (max-width: 640px) {
   .site-nav { padding: 10px 14px; }
@@ -303,3 +304,18 @@ body {
   .nav-brand { font-size: 10px; }
   .card .btn { align-self: stretch; text-align: center; }
 }
+
+/* ---- requirements on the landing page ---- */
+.specs {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8px 24px 12px;
+  text-align: center;
+}
+.section-title {
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  color: var(--gold);
+  margin: 0 0 4px;
+}
+.specs .cards { margin: 16px 0 12px; }

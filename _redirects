@@ -1,5 +1,6 @@
 # Cloudflare Pages redirects. The Windows client zip is ~150 MB, over Pages' 25 MB per-file limit, so the file lives on the VPS
 # (uploaded by deploy -Client) and this gives it a main-domain address. Browsers follow the redirect transparently.
 /downloads/WarriorsAndWizards-Client.zip  https://play.warriorsandwizards.com/download/WarriorsAndWizards-Client.zip  302
+/downloads/WarriorsAndWizards-Client-linux.tar.gz  https://play.warriorsandwizards.com/download/WarriorsAndWizards-Client-linux.tar.gz  302
 /downloads  /download/  301
 /downloads/  /download/  301
