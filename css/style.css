@@ -202,3 +202,104 @@ body {
   .coming-soon { font-size: 15px; }
   .tagline { font-size: 16px; }
 }
+
+/* ---- site navigation (Play / Download / Forums) ---- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  border-bottom: 3px solid var(--border);
+}
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.nav-links { display: flex; gap: 6px; }
+.nav-link {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 3px solid transparent;
+}
+.nav-link:hover, .nav-link.is-current { color: var(--gold); border-color: var(--border); background: var(--panel); }
+.nav-play { color: var(--ember); }
+
+/* ---- landing calls to action ---- */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 6px 0 12px;
+}
+.btn-secondary {
+  background: var(--panel);
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn-secondary:hover { border-color: var(--purple); color: var(--gold); }
+.hint {
+  font-size: 17px;
+  color: var(--text-dim);
+  margin: 0;
+}
+.hint a { color: var(--purple); text-decoration: none; }
+.hint a:hover { color: var(--gold); }
+
+/* ---- inner pages (Download) ---- */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+  text-align: center;
+}
+.page-title {
+  font-family: var(--font-pixel);
+  font-size: 20px;
+  color: var(--gold);
+  margin: 0 0 12px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 22px 0;
+  text-align: left;
+}
+.card {
+  background: var(--panel);
+  border: 3px solid var(--border);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-title {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  color: var(--text);
+  margin: 0;
+}
+.card p { margin: 0; }
+.card .btn { align-self: flex-start; }
+.steps { margin: 0; padding-left: 22px; }
+.steps li { margin-bottom: 6px; }
+.fine { font-size: 17px; color: var(--text-dim); }
+
+@media (max-width: 640px) {
+  .site-nav { padding: 10px 14px; }
+  .nav-link { font-size: 9px; padding: 8px 8px; }
+  .nav-brand { font-size: 10px; }
+  .card .btn { align-self: stretch; text-align: center; }
+}
