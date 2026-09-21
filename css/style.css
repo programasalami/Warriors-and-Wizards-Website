@@ -347,3 +347,7 @@ code { font-family: var(--font-body); background: var(--bg); border: 1px solid v
   .side-ad { position: static; transform: none; width: auto; margin: 0 auto 32px; text-align: center; }
   .side-ad .discord-card { display: inline-flex; width: auto; }
 }
+
+/* ---- a card that spans the whole row, centered (the browser card under the two client cards) ---- */
+.card-wide { grid-column: 1 / -1; align-items: center; text-align: center; }
+.card-wide .btn { align-self: center; }
