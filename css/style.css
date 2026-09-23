@@ -314,7 +314,7 @@ body {
 .fine { font-size: 14px; color: var(--text-dim); }
 code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; background: var(--bg); border: 1px solid var(--border); padding: 1px 6px; border-radius: 3px; }
 
-/* ---- "Can't install anything?" strip under the download cards ---- */
+/* ---- Web Client button under the download cards ---- */
 .alt-play {
   display: flex;
   flex-wrap: wrap;
@@ -341,6 +341,13 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; backgrou
 .reqs ul { margin: 10px 0 4px; padding-left: 20px; font-size: 15px; color: var(--text-dim); }
 .reqs li { margin-bottom: 6px; }
 .reqs strong { color: var(--text); }
+.reqs p { margin: 10px 0 4px; font-size: 15px; color: var(--text-dim); }
+.reqs p a { color: var(--purple); }
+
+/* ---- launcher FAQ on the Download page: one folded .reqs box per question ---- */
+.faq { max-width: 640px; margin: 8px auto 18px; scroll-margin-top: 20px; }
+.faq-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 22px; margin: 0 0 12px; }
+.faq .reqs { margin-bottom: 8px; }
 
 @media (max-width: 640px) {
   .site-nav { padding: 10px 14px; flex-wrap: wrap; justify-content: center; }

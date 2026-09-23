@@ -1,5 +1,5 @@
 // Highlight the download that matches the visitor's system: that button stays gold and comes first, the other one turns plain.
-// A Mac, phone or tablet has no desktop version yet, so those visitors are pointed at the web version instead.
+// A Mac, phone or tablet has no desktop version yet, so only those visitors see the (otherwise hidden) line pointing at the web client.
 (function () {
   const win = document.getElementById('dl-windows');
   const lin = document.getElementById('dl-linux');
@@ -21,8 +21,9 @@
   } else {
     const hint = document.getElementById('alt-hint');
     if (hint) {
+      hint.hidden = false;
       hint.innerHTML = 'On a Mac, phone or Chromebook? There is no desktop version for it yet, but you can ' +
-        '<a href="https://play.warriorsandwizards.com">play the web version in your browser</a>.';
+        '<a href="https://play.warriorsandwizards.com">play the Web Client in your browser</a>.';
     }
   }
 })();

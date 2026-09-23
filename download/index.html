@@ -19,20 +19,20 @@
 <nav class="site-nav" aria-label="Site">
   <a class="nav-brand" href="/"><img src="../assets/favicon-32.png" alt="" width="22" height="22"> W&amp;W</a>
   <div class="nav-links">
+    <a href="/" class="nav-link">Home</a>
     <a href="/download/" class="nav-link nav-download is-current">Download</a>
     <a href="https://portal.warriorsandwizards.com" class="nav-link">Portal</a>
     <a href="https://forums.warriorsandwizards.com" class="nav-link">Forums</a>
-    <a href="https://play.warriorsandwizards.com" class="nav-link">Web version</a>
+    <a href="https://play.warriorsandwizards.com" class="nav-link">Web Client</a>
   </div>
 </nav>
 
 <div class="beta-banner" role="note">
-  <strong>OPEN BETA</strong> Warriors &amp; Wizards is still being built, so you may run into bugs and missing content. Found something? Tell us on the <a href="https://forums.warriorsandwizards.com">forums</a>.
+  <strong>OPEN BETA</strong> Warriors &amp; Wizards is still being built, so you may run into bugs and missing content.
 </div>
 
 <main class="page">
   <h1 class="page-title">Download Warriors &amp; Wizards</h1>
-  <p class="tagline">Free. Run the launcher once: it installs the game, adds a shortcut, and keeps everything up to date from then on.</p>
 
   <div class="cards">
     <section class="card">
@@ -51,8 +51,7 @@
   </div>
 
   <div class="alt-play">
-    <span>Can't install anything on this computer?</span>
-    <a class="btn btn-secondary" href="https://play.warriorsandwizards.com">Play the web version</a>
+    <a class="btn btn-secondary" href="https://play.warriorsandwizards.com">Play the Web Client</a>
   </div>
 
   <details class="reqs">
@@ -62,11 +61,55 @@
       <li><strong>Linux:</strong> 64-bit, X11 or XWayland, Mesa 19+ or the NVIDIA driver.</li>
       <li><strong>Graphics:</strong> OpenGL 4.3, which is almost anything from 2013 on (Intel HD 4400 laptops included).</li>
       <li><strong>Space:</strong> about 150 MB. <strong>Memory:</strong> 4 GB.</li>
-      <li><strong>Web version:</strong> any current browser with WebGL2 (Chrome, Edge, Firefox, Safari 15+).</li>
+      <li><strong>Web Client:</strong> any current browser with WebGL2 (Chrome, Edge, Firefox, Safari 15+).</li>
     </ul>
   </details>
 
-  <p class="hint">What changed lately? See the <a href="https://portal.warriorsandwizards.com/releases.html">release history</a>. Stuck? Ask on the <a href="https://forums.warriorsandwizards.com">forums</a>.</p>
+  <section class="faq" id="faq">
+    <h2 class="faq-title">Having trouble with the launcher?</h2>
+
+    <details class="reqs">
+      <summary>Windows says "Windows protected your PC"</summary>
+      <p>The launcher isn't code-signed yet, so Windows doesn't recognise it. Click <strong>More info</strong>, then <strong>Run anyway</strong>. You only have to do this once.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>My antivirus removed or blocked the launcher</summary>
+      <p>Unsigned programs sometimes get flagged. Restore <strong>WaWLauncher.exe</strong> from your antivirus's quarantine and allow the folder you installed the game in, then start the launcher again.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>The launcher won't update the game</summary>
+      <p>It can't replace the game's files while the game is running. Close the game, then press <strong>PLAY</strong> again, or close and reopen the launcher.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>The game crashes or won't start</summary>
+      <p>Press <strong>Repair</strong> in the launcher. It checks every game file and downloads again any that are missing or damaged. Your settings are kept.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>The game says "Update required"</summary>
+      <p>A new version came out while you were playing. Close the game and start it from the launcher, which downloads the update first. In the Web Client, press <strong>Refresh</strong>.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>Where did the game install? Can I move it?</summary>
+      <p>The game installs in the folder you picked the first time, right next to the launcher. <strong>Open game folder</strong> in the launcher takes you there. To move it, move the whole folder, launcher included, and update your shortcuts.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>Linux: nothing happens when I open the launcher</summary>
+      <p>Open a terminal in the extracted folder and run <code>chmod +x WaWLauncher</code>, then <code>./WaWLauncher</code>. If it still won't start, the terminal shows why. The launcher needs an X11 or XWayland session.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>My problem isn't listed here</summary>
+      <p>Post it on the <a href="https://forums.warriorsandwizards.com">forums</a> with what you saw and which system you're on. Meanwhile, the <a href="https://play.warriorsandwizards.com">Web Client</a> runs in your browser with no install.</p>
+    </details>
+  </section>
+
+  <p class="hint">What changed lately? See the <a href="https://portal.warriorsandwizards.com/releases.html">release history</a>.</p>
 </main>
 
 <script src="../js/os.js"></script>
