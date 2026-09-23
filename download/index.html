@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download — Warriors &amp; Wizards</title>
-<meta name="description" content="Download the Warriors &amp; Wizards Windows client, or play in your browser.">
+<title>Download - Warriors &amp; Wizards</title>
+<meta name="description" content="Download the Warriors &amp; Wizards launcher for Windows or Linux, or play in your browser.">
 <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -17,12 +17,12 @@
 <div class="embers"></div>
 
 <nav class="site-nav" aria-label="Site">
-  <a class="nav-brand" href="/"><img src="../assets/favicon-32.png" alt="" width="20" height="20"> W&amp;W</a>
+  <a class="nav-brand" href="/"><img src="../assets/favicon-32.png" alt="" width="22" height="22"> W&amp;W</a>
   <div class="nav-links">
-    <a href="https://play.warriorsandwizards.com" class="nav-link nav-play">Play</a>
-    <a href="/download/" class="nav-link is-current">Download</a>
-    <a href="https://forums.warriorsandwizards.com" class="nav-link">Forums</a>
+    <a href="/download/" class="nav-link nav-download is-current">Download</a>
     <a href="https://portal.warriorsandwizards.com" class="nav-link">Portal</a>
+    <a href="https://forums.warriorsandwizards.com" class="nav-link">Forums</a>
+    <a href="https://play.warriorsandwizards.com" class="nav-link">Web version</a>
   </div>
 </nav>
 
@@ -31,77 +31,44 @@
 </div>
 
 <main class="page">
-  <h1 class="page-title">Download the launcher</h1>
-  <p class="tagline beta-note">Beta build: it keeps itself up to date, and you may run into a bug or two.</p>
+  <h1 class="page-title">Download Warriors &amp; Wizards</h1>
+  <p class="tagline">Free. Run the launcher once: it installs the game, adds a shortcut, and keeps everything up to date from then on.</p>
 
   <div class="cards">
     <section class="card">
-      <h2 class="card-title">Windows Launcher</h2>
-      <a class="btn btn-primary" href="/downloads/WarriorsAndWizards-Launcher-windows.zip">Download for Windows</a>
-      <p>The full desktop version. Smoother on older PCs and laptops, and it does not depend on your browser.</p>
-      <ul class="steps">
-        <li>The first start downloads the game (about 150 MB); after that it only checks for updates and starts the game.</li>
-        <li>Windows may show a blue "protected your PC" box the first time because the game is not code-signed yet. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
-        <li>Make an account in the game or sign in with the one you use in the browser.</li>
-      </ul>
-      <p class="fine">Requirements: 64-bit Windows 10 or 11, a graphics card with OpenGL 4.3 (anything from about 2013 on, including Intel HD 4400). About 150 MB.</p>
+      <h2 class="card-title">Windows</h2>
+      <a class="btn btn-primary" id="dl-windows" href="/downloads/WaWLauncher.exe">Download for Windows</a>
+      <p>Open <strong>WaWLauncher.exe</strong>, pick a folder, press <strong>Install</strong>.</p>
+      <p class="fine">If Windows says it "protected your PC", click <strong>More info</strong>, then <strong>Run anyway</strong> (the game is not code-signed yet).</p>
     </section>
 
     <section class="card">
-      <h2 class="card-title">Linux Launcher</h2>
-      <a class="btn btn-primary" href="/downloads/WarriorsAndWizards-Launcher-linux.tar.gz">Download for Linux</a>
-      <p>The same desktop client for 64-bit Linux. Smoother on older machines, and it does not depend on your browser.</p>
-      <ul class="steps">
-        <li>Extract the archive anywhere: <code>tar -xzf WarriorsAndWizards-Launcher-linux.tar.gz</code></li>
-        <li>Start it with <code>bash run.sh</code> the first time; after that <code>./WarriorsAndWizards</code> works too. It downloads the game, keeps it up to date, and starts it.</li>
-        <li>Needs OpenGL 4.3 (Mesa 19 or newer covers Intel and AMD; NVIDIA's driver too) and an X11 or XWayland session.</li>
-      </ul>
-      <p class="fine">There is no installer: extracting the archive is the whole setup, no root needed. Your settings live in ~/.local/share/AlloyClient.</p>
-    </section>
-
-    <section class="card card-wide">
-      <h2 class="card-title">Play in your browser</h2>
-      <p>No download. Opens in Chrome, Edge, Firefox or Safari and plays on the same servers.</p>
-      <a class="btn btn-secondary" href="https://play.warriorsandwizards.com">Play now</a>
-      <p class="fine">The first load fetches the game once (about 20 MB); after that it starts quickly. Needs WebGL2, which every current browser has.</p>
+      <h2 class="card-title">Linux</h2>
+      <a class="btn btn-primary" id="dl-linux" href="/downloads/WaWLauncher-linux.tar.gz">Download for Linux</a>
+      <p>Extract it, then start <strong>WaWLauncher</strong> (double-click, or <code>./WaWLauncher</code> in a terminal).</p>
+      <p class="fine">64-bit, with an X11 or XWayland session. No root needed.</p>
     </section>
   </div>
 
-  <p class="hint">Stuck? Ask on the <a href="https://forums.warriorsandwizards.com">forums</a> or in the Discord on the <a href="/">home page</a>.</p>
-  <p class="hint">What changed lately? Every update is in the <a href="https://portal.warriorsandwizards.com/releases.html">release history</a> on The Portal.</p>
+  <div class="alt-play">
+    <span>Can't install anything on this computer?</span>
+    <a class="btn btn-secondary" href="https://play.warriorsandwizards.com">Play the web version</a>
+  </div>
 
-  <section class="specs">
-    <h2 class="section-title">What you need to play</h2>
-    <div class="cards">
-      <div class="card">
-        <h3 class="card-title">Browser</h3>
-        <ul class="steps">
-          <li>Any current browser with WebGL2: Chrome, Edge, Firefox or Safari 15+.</li>
-          <li>Windows, macOS, Linux or ChromeOS. A phone or tablet loads it too.</li>
-          <li>About 20 MB downloaded once, then it starts fast.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Windows</h3>
-        <ul class="steps">
-          <li>64-bit Windows 10 or 11.</li>
-          <li>A graphics card or chip with OpenGL 4.3: anything from about 2013 on, including Intel HD 4400 laptop graphics.</li>
-          <li>4 GB of RAM and about 150 MB of disk space.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Linux</h3>
-        <ul class="steps">
-          <li>64-bit Linux with an X11 or XWayland session.</li>
-          <li>OpenGL 4.3 through Mesa (Intel, AMD) or the NVIDIA driver.</li>
-          <li>4 GB of RAM and about 150 MB of disk space. Nothing to install.</li>
-        </ul>
-      </div>
-    </div>
-    <p class="hint">If your machine turns on, it can probably run Warriors &amp; Wizards.</p>
-  </section>
+  <details class="reqs">
+    <summary>System requirements</summary>
+    <ul>
+      <li><strong>Windows:</strong> 64-bit Windows 10 or 11.</li>
+      <li><strong>Linux:</strong> 64-bit, X11 or XWayland, Mesa 19+ or the NVIDIA driver.</li>
+      <li><strong>Graphics:</strong> OpenGL 4.3, which is almost anything from 2013 on (Intel HD 4400 laptops included).</li>
+      <li><strong>Space:</strong> about 150 MB. <strong>Memory:</strong> 4 GB.</li>
+      <li><strong>Web version:</strong> any current browser with WebGL2 (Chrome, Edge, Firefox, Safari 15+).</li>
+    </ul>
+  </details>
+
+  <p class="hint">What changed lately? See the <a href="https://portal.warriorsandwizards.com/releases.html">release history</a>. Stuck? Ask on the <a href="https://forums.warriorsandwizards.com">forums</a>.</p>
 </main>
 
-
+<script src="../js/os.js"></script>
 </body>
 </html>

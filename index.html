@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Warriors &amp; Wizards</title>
-<meta name="description" content="Warriors &amp; Wizards is a free online action RPG. Play it in your browser or download the Windows client.">
+<meta name="description" content="Warriors &amp; Wizards is a free online action RPG. Download the launcher for Windows or Linux, or play in your browser.">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,12 +17,12 @@
 <div class="embers"></div>
 
 <nav class="site-nav" aria-label="Site">
-  <a class="nav-brand" href="/"><img src="assets/favicon-32.png" alt="" width="20" height="20"> W&amp;W</a>
+  <a class="nav-brand" href="/"><img src="assets/favicon-32.png" alt="" width="22" height="22"> W&amp;W</a>
   <div class="nav-links">
-    <a href="https://play.warriorsandwizards.com" class="nav-link nav-play">Play</a>
-    <a href="/download/" class="nav-link">Download</a>
-    <a href="https://forums.warriorsandwizards.com" class="nav-link">Forums</a>
+    <a href="/download/" class="nav-link nav-download">Download</a>
     <a href="https://portal.warriorsandwizards.com" class="nav-link">Portal</a>
+    <a href="https://forums.warriorsandwizards.com" class="nav-link">Forums</a>
+    <a href="https://play.warriorsandwizards.com" class="nav-link">Web version</a>
   </div>
 </nav>
 
@@ -33,16 +33,23 @@
 <main>
   <section class="hero">
     <div class="hero-art-wrap">
-      <img class="hero-art" src="assets/hero-art.png" alt="Wizards &amp; Warriors key art — a wizard and warrior stand before a burning castle under a purple moon">
+      <img class="hero-art" src="assets/hero-art.png" alt="Warriors &amp; Wizards key art: a wizard and a warrior stand before a burning castle under a purple moon">
     </div>
     <div class="hero-text">
       <h1 class="game-title"><span class="t-war">Warriors</span> <span class="amp">&amp;</span> <span class="t-wiz">Wizards</span></h1>
       <p class="tagline">Warriors &amp; Wizards is a MMORPG bullet-hell that takes place in the medieval age, where you take on the role of Warriors &amp; Wizards and join the everlasting battle in the name of protecting the kingdom.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://play.warriorsandwizards.com">Play in browser</a>
-        <a class="btn btn-secondary" href="/download/">Download for Windows</a>
+      <div class="cta-row" id="downloads">
+        <a class="btn btn-primary btn-os" id="dl-windows" href="/downloads/WaWLauncher.exe">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 4.5 10.2 3.4v8.1H2zM11.2 3.2 22 1.8v9.7H11.2zM2 12.5h8.2v8.1L2 19.5zM11.2 12.5H22v9.7l-10.8-1.4z"/></svg>
+          Download for Windows
+        </a>
+        <a class="btn btn-primary btn-os" id="dl-linux" href="/downloads/WaWLauncher-linux.tar.gz">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="13" rx="7" ry="9.5" fill="currentColor"/><ellipse cx="12" cy="15.5" rx="4.3" ry="6" fill="#fff"/><circle cx="10" cy="7.6" r="1.1" fill="#fff"/><circle cx="14" cy="7.6" r="1.1" fill="#fff"/><path d="M10.4 9.6h3.2L12 11.4z" fill="#ff7b3f"/><ellipse cx="8.3" cy="22.3" rx="2.6" ry="1.2" fill="#ff7b3f"/><ellipse cx="15.7" cy="22.3" rx="2.6" ry="1.2" fill="#ff7b3f"/></svg>
+          Download for Linux
+        </a>
       </div>
-      <p class="hint">The Windows client runs smoother on older PCs.</p>
+      <p class="hint">Free. The launcher installs the game, keeps it up to date and starts it. <a href="/download/">More about the download</a></p>
+      <p class="hint" id="alt-hint">No way to install things (a Chromebook, a school PC)? <a href="https://play.warriorsandwizards.com">Play the web version in your browser</a>.</p>
     </div>
   </section>
 
@@ -65,6 +72,7 @@
     </div>
 </aside>
 
+<script src="js/os.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
