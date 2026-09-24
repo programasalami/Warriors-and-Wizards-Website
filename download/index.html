@@ -37,15 +37,15 @@
   <div class="cards">
     <section class="card">
       <h2 class="card-title">Windows</h2>
-      <a class="btn btn-primary" id="dl-windows" href="/downloads/WaWLauncher.exe">Download for Windows</a>
-      <p>Open <strong>WaWLauncher.exe</strong>, pick a folder, press <strong>Install</strong>.</p>
+      <a class="btn btn-primary" id="dl-windows" href="/downloads/WaW-Installer.exe">Download for Windows</a>
+      <p>Open <strong>WaW-Installer.exe</strong>, pick a folder and press <strong>Install</strong>. The launcher opens, downloads the game and lets you sign in. Then press <strong>Play</strong>.</p>
       <p class="fine">If Windows says it "protected your PC", click <strong>More info</strong>, then <strong>Run anyway</strong> (the game is not code-signed yet).</p>
     </section>
 
     <section class="card">
       <h2 class="card-title">Linux</h2>
-      <a class="btn btn-primary" id="dl-linux" href="/downloads/WaWLauncher-linux.tar.gz">Download for Linux</a>
-      <p>Extract it, then start <strong>WaWLauncher</strong> (double-click, or <code>./WaWLauncher</code> in a terminal).</p>
+      <a class="btn btn-primary" id="dl-linux" href="/downloads/WaW-Installer-linux.tar.gz">Download for Linux</a>
+      <p>Extract it and start <strong>WaW-Installer</strong> (double-click, or <code>./WaW-Installer</code> in a terminal). Pick a folder, press <strong>Install</strong>; the launcher opens, downloads the game and lets you sign in.</p>
       <p class="fine">64-bit, with an X11 or XWayland session. No root needed.</p>
     </section>
   </div>
@@ -75,12 +75,12 @@
 
     <details class="reqs">
       <summary>My antivirus removed or blocked the launcher</summary>
-      <p>Unsigned programs sometimes get flagged. Restore <strong>WaWLauncher.exe</strong> from your antivirus's quarantine and allow the folder you installed the game in, then start the launcher again.</p>
+      <p>Unsigned programs sometimes get flagged. Restore <strong>WaW-Installer.exe</strong> or <strong>WaWLauncher.exe</strong> from your antivirus's quarantine and allow the folder you installed the game in, then start the launcher again.</p>
     </details>
 
     <details class="reqs">
       <summary>The launcher won't update the game</summary>
-      <p>It can't replace the game's files while the game is running. Close the game, then press <strong>PLAY</strong> again, or close and reopen the launcher.</p>
+      <p>The launcher looks for updates every time you open it and again when you press <strong>PLAY</strong>. When one is out, the big button says <strong>UPDATE</strong>. It can't replace the game's files while the game is running: close the game, then press <strong>UPDATE</strong> again.</p>
     </details>
 
     <details class="reqs">
@@ -95,12 +95,22 @@
 
     <details class="reqs">
       <summary>Where did the game install? Can I move it?</summary>
-      <p>The game installs in the folder you picked the first time, right next to the launcher. <strong>Open game folder</strong> in the launcher takes you there. To move it, move the whole folder, launcher included, and update your shortcuts.</p>
+      <p>The launcher goes in the folder you picked the first time, and the game goes in a <strong>Game</strong> folder inside it. To move it, move the whole folder, launcher included, and update your shortcuts.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>Do I have to sign in every time?</summary>
+      <p>No. Tick <strong>Remember me on this PC</strong> when you sign in, and the launcher keeps you signed in. It never stores your password, only a sign-in key that stops working after 30 days without use, or as soon as you press <strong>Sign out</strong>. <strong>PLAY</strong> opens the game already signed in.</p>
+    </details>
+
+    <details class="reqs">
+      <summary>How do I uninstall the game?</summary>
+      <p>On Windows, open <strong>Settings &gt; Apps</strong>, find <strong>Warriors &amp; Wizards</strong> and choose <strong>Uninstall</strong>, or press <strong>Uninstall</strong> at the bottom of the launcher (that one works on Linux too). Your account and characters stay safe on the server.</p>
     </details>
 
     <details class="reqs">
       <summary>Linux: nothing happens when I open the launcher</summary>
-      <p>Open a terminal in the extracted folder and run <code>chmod +x WaWLauncher</code>, then <code>./WaWLauncher</code>. If it still won't start, the terminal shows why. The launcher needs an X11 or XWayland session.</p>
+      <p>Open a terminal in the extracted folder and run <code>chmod +x WaW-Installer</code>, then <code>./WaW-Installer</code> (for the installed launcher: <code>./WaWLauncher</code> in its folder). If it still won't start, the terminal shows why. The launcher needs an X11 or XWayland session.</p>
     </details>
 
     <details class="reqs">
@@ -109,7 +119,7 @@
     </details>
   </section>
 
-  <p class="hint">What changed lately? See the <a href="https://portal.warriorsandwizards.com/releases.html">release history</a>.</p>
+  <p class="hint">What changed lately? See the <a href="https://portal.warriorsandwizards.com/releases.html">patch notes</a>.</p>
 </main>
 
 <script src="../js/os.js"></script>

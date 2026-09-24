@@ -1,9 +1,13 @@
 # Cloudflare Pages redirects. The downloads are over Pages' 25 MB per-file limit, so they live on the VPS (uploaded by deploy -Client,
 # -Linux and -Launcher) and this gives them a main-domain address. Browsers follow the redirect transparently.
-# WaWLauncher.* is what the Download buttons hand out (launcher 2.0.0+, 2026-09-22); WarriorsAndWizards-Launcher-* are the
-# launcher's self-update archives (kept for links people already have); the Client archives are the bare game.
-/downloads/WaWLauncher.exe  https://play.warriorsandwizards.com/download/WaWLauncher.exe  302
-/downloads/WaWLauncher-linux.tar.gz  https://play.warriorsandwizards.com/download/WaWLauncher-linux.tar.gz  302
+# WaW-Installer.exe / WaW-Installer-linux.tar.gz (2026-09-24) are what the Download buttons hand out: the installer puts the launcher in
+# place, the launcher installs and updates the game. Older download names (links people already have) now lead to the installer too.
+# WarriorsAndWizards-Launcher-* are the launcher's self-update archives; the Client archives are the bare game.
+/downloads/WaW-Installer.exe  https://play.warriorsandwizards.com/download/WaW-Installer.exe  302
+/downloads/WaW-Installer-linux.tar.gz  https://play.warriorsandwizards.com/download/WaW-Installer-linux.tar.gz  302
+/downloads/WarriorsAndWizards-Setup.exe  https://play.warriorsandwizards.com/download/WaW-Installer.exe  302
+/downloads/WaWLauncher.exe  https://play.warriorsandwizards.com/download/WaW-Installer.exe  302
+/downloads/WaWLauncher-linux.tar.gz  https://play.warriorsandwizards.com/download/WaW-Installer-linux.tar.gz  302
 /downloads/WarriorsAndWizards-Launcher-windows.zip  https://play.warriorsandwizards.com/download/WarriorsAndWizards-Launcher-windows.zip  302
 /downloads/WarriorsAndWizards-Launcher-linux.tar.gz  https://play.warriorsandwizards.com/download/WarriorsAndWizards-Launcher-linux.tar.gz  302
 /downloads/WarriorsAndWizards-Client.zip  https://play.warriorsandwizards.com/download/WarriorsAndWizards-Client.zip  302
