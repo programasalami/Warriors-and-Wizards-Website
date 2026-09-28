@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Download - Warriors &amp; Wizards</title>
-<meta name="description" content="Download the Warriors &amp; Wizards launcher for Windows or Linux, or play in your browser.">
+<meta name="description" content="Download the Warriors &amp; Wizards launcher for Windows, Mac or Linux, or play in your browser.">
 <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +47,13 @@
       <p>Extract it and start <strong>WaW-Installer</strong> (double-click, or <code>./WaW-Installer</code> in a terminal). Pick a folder, press <strong>Install</strong>; the launcher opens, downloads the game and lets you sign in.</p>
       <p class="fine">64-bit, with an X11 or XWayland session. No root needed.</p>
     </section>
+
+    <section class="card">
+      <h2 class="card-title">Mac</h2>
+      <a class="btn btn-primary" id="dl-mac" href="/downloads/WaW-Mac.zip">Download for Mac</a>
+      <p>Open the download to unzip it, drag <strong>Warriors &amp; Wizards</strong> into your <strong>Applications</strong> folder and open it from there. The launcher downloads the game and lets you sign in.</p>
+      <p class="fine">Apple Silicon and Intel, macOS 12 or newer. The first time, macOS asks you to allow it: see <a href="#faq-mac">below</a>.</p>
+    </section>
   </div>
 
   <div class="alt-play">
@@ -57,8 +64,9 @@
     <summary>System requirements</summary>
     <ul>
       <li><strong>Windows:</strong> 64-bit Windows 10 or 11.</li>
+      <li><strong>Mac:</strong> macOS 12 Monterey or newer, Apple Silicon (M1 and later) or Intel.</li>
       <li><strong>Linux:</strong> 64-bit, X11 or XWayland, Mesa 19+ or the NVIDIA driver.</li>
-      <li><strong>Graphics:</strong> OpenGL 4.3, which is almost anything from 2013 on (Intel HD 4400 laptops included).</li>
+      <li><strong>Graphics:</strong> OpenGL 3.3, which is almost anything from the last 15 years (every Mac, older laptops included).</li>
       <li><strong>Space:</strong> about 150 MB. <strong>Memory:</strong> 4 GB.</li>
       <li><strong>Web Client:</strong> any current browser with WebGL2 (Chrome, Edge, Firefox, Safari 15+).</li>
     </ul>
@@ -70,6 +78,12 @@
     <details class="reqs">
       <summary>Windows says "Windows protected your PC"</summary>
       <p>The launcher isn't code-signed yet, so Windows doesn't recognise it. Click <strong>More info</strong>, then <strong>Run anyway</strong>. You only have to do this once.</p>
+    </details>
+
+    <details class="reqs" id="faq-mac">
+      <summary>Mac: "Warriors &amp; Wizards can't be opened" or "Apple could not verify it"</summary>
+      <p>The launcher isn't signed with an Apple developer certificate yet, so macOS asks you to allow it once. Try to open it, press <strong>Done</strong>, then open <strong>System Settings &gt; Privacy &amp; Security</strong>, scroll down to <strong>Warriors &amp; Wizards was blocked</strong> and press <strong>Open Anyway</strong>. On macOS 14 or older you can also right-click the app and choose <strong>Open</strong>. You only have to do this once.</p>
+      <p>Open it from your <strong>Applications</strong> folder, not straight from Downloads: macOS runs apps from Downloads in a read-only copy, and the launcher can't update itself there.</p>
     </details>
 
     <details class="reqs">
@@ -95,6 +109,7 @@
     <details class="reqs">
       <summary>Where did the game install? Can I move it?</summary>
       <p>The launcher goes in the folder you picked the first time, and the game goes in a <strong>Game</strong> folder inside it. To move it, move the whole folder, launcher included, and update your shortcuts.</p>
+      <p>On a Mac the launcher is the app in <strong>Applications</strong>, and the game lives in <strong>~/Library/Application Support/Warriors and Wizards</strong>.</p>
     </details>
 
     <details class="reqs">
@@ -104,7 +119,7 @@
 
     <details class="reqs">
       <summary>How do I uninstall the game?</summary>
-      <p>On Windows, open <strong>Settings &gt; Apps</strong>, find <strong>Warriors &amp; Wizards</strong> and choose <strong>Uninstall</strong>, or press <strong>Uninstall</strong> at the bottom of the launcher (that one works on Linux too). Your account and characters stay safe on the server.</p>
+      <p>On Windows, open <strong>Settings &gt; Apps</strong>, find <strong>Warriors &amp; Wizards</strong> and choose <strong>Uninstall</strong>, or press <strong>Uninstall</strong> at the bottom of the launcher (that one works on Linux and Mac too). On a Mac, then drag <strong>Warriors &amp; Wizards</strong> from Applications to the Bin. Your account and characters stay safe on the server.</p>
     </details>
 
     <details class="reqs">
