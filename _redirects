@@ -16,3 +16,6 @@
 /downloads  /download/  301
 /downloads/  /download/  301
 /portal  https://portal.warriorsandwizards.com  302
+# No public patch notes since 2026-10-04 (they are in the game's NEWS tab): launchers up to 3.0.3 still link here, so send them home.
+/patch-notes  /  301
+/patch-notes/  /  301
