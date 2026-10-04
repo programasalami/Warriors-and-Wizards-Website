@@ -172,17 +172,27 @@ body {
 }
 .btn-secondary:hover { border-color: var(--purple); color: var(--gold); }
 
-/* the two download buttons on the landing page: an OS icon + the label, same width */
+/* the download buttons on the landing page (2026-10-04, the user: sleek / minimal - an OS icon + one word): compact pills of one width,
+   a thin border, your own system's button gold (os.js) and the others outlined */
 .btn-os {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-width: 260px;
-  padding: 16px 26px;
-  font-size: 18px;
+  gap: 9px;
+  min-width: 148px;
+  padding: 11px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  border-width: 1.5px;
+  border-radius: 999px;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.btn-os svg { width: 22px; height: 22px; flex: 0 0 auto; }
+.btn-os svg { width: 19px; height: 19px; flex: 0 0 auto; }
+.btn-os:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); }
+.btn-os:active { transform: translateY(1px); box-shadow: none; }
+.btn-os.btn-secondary { background: transparent; border-color: rgba(242, 230, 234, 0.22); color: var(--text-dim); }
+.btn-os.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
 
 .site-footer {
   text-align: center;
@@ -196,6 +206,20 @@ body {
 }
 .site-footer a:hover { color: var(--gold); }
 
+/* ---- the Patch Notes page (2026-10-01: the patch notes live here only) ---- */
+.pn-months { margin: 0 0 18px; font-size: 14px; color: var(--text-dim); }
+.pn-months a { color: var(--purple); text-decoration: none; }
+.pn-months a:hover { color: var(--gold); }
+.pn-list { text-align: left; }
+.pn-month { margin-bottom: 26px; scroll-margin-top: 20px; }
+.pn-month-title { font-family: var(--font-display); color: var(--gold); font-size: 22px; margin: 0 0 12px; text-align: center; }
+.pn-note { margin-bottom: 16px; gap: 6px; }
+.pn-version { font-family: var(--font-display); font-size: 26px; color: var(--gold); margin: 0; }
+.pn-meta { font-size: 13px; color: var(--text-dim); }
+.pn-title { font-size: 18px; color: var(--text); margin: 6px 0 2px; }
+.pn-note ul { margin: 4px 0 0; padding-left: 20px; color: var(--text-dim); font-size: 15px; }
+.pn-note li { margin-bottom: 8px; line-height: 1.5; }
+
 @media (max-width: 640px) {
   .hero {
     padding-top: 24px;
@@ -203,7 +227,8 @@ body {
   .hero-art-wrap { width: 130px; height: 130px; }
   .game-title { font-size: 30px; }
   .tagline { font-size: 16px; }
-  .btn-os { min-width: 0; width: 100%; }
+  .btn-os { min-width: 0; width: 100%; max-width: 280px; }
+  .cta-row { flex-direction: column; align-items: center; }
 }
 
 /* ---- site navigation ---- */
@@ -313,19 +338,6 @@ body {
 .card .btn { align-self: flex-start; }
 .fine { font-size: 14px; color: var(--text-dim); }
 code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; background: var(--bg); border: 1px solid var(--border); padding: 1px 6px; border-radius: 3px; }
-
-/* ---- Web Client button under the download cards ---- */
-.alt-play {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin: 4px 0 22px;
-  color: var(--text-dim);
-  font-size: 15px;
-}
-.alt-play .btn { padding: 9px 18px; font-size: 14px; }
 
 /* ---- folded system requirements ---- */
 .reqs {

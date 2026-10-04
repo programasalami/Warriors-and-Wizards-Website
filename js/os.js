@@ -1,5 +1,5 @@
 // Highlight the download that matches the visitor's system: that button stays gold and comes first, the others turn plain.
-// A phone, tablet or Chromebook has no desktop version, so only those visitors see the (otherwise hidden) line pointing at the web client.
+// A phone, tablet or Chromebook has no desktop version, so only those visitors see the (otherwise hidden) line saying so (the web client is off: 2026-10-04).
 // (The Mac got its own download on 2026-09-27; an iPad reports itself as a Mac, so a touch screen does not count as one.)
 (function () {
   const buttons = { windows: document.getElementById('dl-windows'), linux: document.getElementById('dl-linux'), mac: document.getElementById('dl-mac') };
@@ -25,8 +25,7 @@
     const hint = document.getElementById('alt-hint');
     if (hint) {
       hint.hidden = false;
-      hint.innerHTML = 'On a phone, tablet or Chromebook? There is no desktop version for it, but you can ' +
-        '<a href="https://play.warriorsandwizards.com">play the Web Client in your browser</a>.';
+      hint.textContent = 'On a phone, tablet or Chromebook? The game needs a Windows, Mac or Linux computer for now: a browser version is coming soon.';
     }
   }
 })();
